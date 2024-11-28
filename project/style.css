@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html,body {
+    font-family: "Oswald", sans-serif; /* Set default font */
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth; 
+}
+
+/* Header */
+header {
+    position: sticky; 
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    background: white; 
+    transition: ease 0.4s;
+    height: 60px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(200, 35, 35);
+    margin-left: 90px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center; /* Center align items */
+    margin-left: 490px;
+}
+
+.navbar a {
+    color: black;
+    font-size: medium;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.4s;
+}
+
+.navbar a:hover {
+    background-color: rgb(148, 111, 66);
+}
+
+/* Image Text Section */
+.image-text {
+    background-image: url('tavel image.jpg');
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    height: 500px;
+    display: flex;
+    
+    text-align: center;
+    color: white;
+    padding: 20px; 
+  
+}
+/* text in image */
+.text1{
+  
+position: relative;
+top: 180px;
+left: 600px;
+}
+.text2{
+    position: relative;
+    top: 230px;
+    left: 100px;
+  }
+
+/* Search Box */
+.searchbox {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    width: 80%; 
+    margin-top: 20px;
+    padding: 20px; 
+    position: absolute; 
+    margin-bottom: 200px;
+    margin-left: 100px;
+    bottom: 30px; 
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    width: 100%; 
+    font-size: 16px;
+    color: #555;
+    position: relative;
+}
+
+input::placeholder {
+    color: #999999;
+}
+.explorebutton{
+    background-color: orange;
+    width: 3cm;
+    height: 1cm;
+    color: whitesmoke;
+    border: solid orange;
+    border-radius: 2px;
+    font-size: small;
+    margin-top: 22px;
+    cursor: pointer;
+
+}
+.text{
+    margin-top: 20px;
+    margin-left: 190px ;
+    font-weight: bolder;
+    font-size: x-large;
+    line-height: 1.5;
+}
+/* Container Row Styling */
+.row-items {
+    display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+ gap: 2px;
+ align-items : centre;
+ margin-top: 10px;
+ align-items: flex-start;
+    margin: 40px 0;
+}
+
+/* Individual Container Styling */
+.container {
+    background-color: white;
+border: 1px solid white;
+padding: 50px 10px;
+border-radius: 4px;  
+transition: all 1s ease 0s;
+cursor: pointer;
+margin-left: 120px;
+    
+}
+
+/* Image Container */
+.container-img {
+    width: 70px; 
+    height: 70px; 
+    overflow: hidden;
+    
+
+}
+
+/* Make sure images fit within the container */
+.container-img img {
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+   background: none;
+   box-shadow: 5px 10px 30px 10px;
+   border-radius: 14px;
+   margin-bottom: 15px;
+   cursor: pointer;
+
+}
+
+/* Container Text Styling */
+.container h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;    
+}
+
+.container p {
+    
+    font-size: 15px;
+    margin-right: 150px;
+}
+/* package text */
+
+.tittle{
+    text-align: center;
+    margin-top: 10px;
+}
+.tittle h2{
+    font-size:34px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.tag{
+    display: flex;
+    justify-content: space-between; 
+    margin-left: 220px;
+}
+.package-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-items: center;
+    padding: 0 40px;
+}
+.package-container img {
+    width: 350px;  
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    transition: all 0.4s ease; 
+    cursor: pointer;
+}
+.package-container  img:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(0.9);
+ 
+}
+.icon-container {
+    display: flex;
+    justify-content:right;
+    margin-top: px;
+   margin-bottom: 140px;
+   
+}
+
+.icon-container img {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease; 
+}
+
+.icon-container img:hover {
+    transform: scale(1.2); 
+}
+
+.Location h4{
+
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 4px;
+    margin-top: 0px;    
+}
+.Location p{
+    text-align:left;
+    font-size: small;
+    font-weight: 300;
+
+}
+/* end package */
+.title1{
+    text-align: center;
+}
+.title1 h2{
+    font-size:34px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+
+
+.Destination-content {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-items: center;
+    padding: 0 40px;
+    
+
+}
+.box1{
+    position: relative;
+}
+.image2 img {
+    width: 350px;  
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 15px;
+    transition: all 0.4s ease; 
+    cursor: pointer;
+}
+.image2 h4{
+position: absolute;
+font-size: 25px;
+color: white;
+left: 19px;
+bottom: 30px;
+letter-spacing: 2px;
+font-weight: bolder;
+}
+.image2  img:hover  {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(0.9);
+ 
+}
+/* review Styles */
+#review {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#review h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #3e3e3e;
+    font-family: 'Oswald', sans-serif;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.customer {
+    background-color: #97d3ef;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(153, 145, 145, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.customer:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+.customer p {
+    font-size: 18px;
+    color: #555;
+    margin: 0 0 10px;
+}
+
+.customer h4 {
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+}
+/* Contact Section */
+#contact {
+    
+    padding: 50px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
+#footer{
+    background-color: #6a6a6a;
+    color: #fff;
+    padding: 30px 0px;
+    text-align: left;
+
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 0.5;
+    margin: 10px;
+    margin-right: 100px;
+
+}
+.footer-section h4{
+    font-size: 25px;
+    color: #ddd;
+    text-decoration: none;
+}
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.linktext{
+    color: white;
+}
+.linktext:hover{
+    color: blueviolet;
+    transition: all;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+.footer-section a {
+    width: 30px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    color: rgb(237, 235, 235);
+    
+}
+.footer-section a:hover{
+    transform: scale(0.9);
+}
+
